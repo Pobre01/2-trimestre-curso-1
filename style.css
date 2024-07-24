@@ -1,38 +1,38 @@
+
 :root {
-    --branco-principal: #FFFFFF;
-    --cinza-secundario: #C0C0C0;
-    --botal-azul: #167BF7;
-    --cor-de-fundo: #00030C;
-    --font-principal: "inter";
-    --botao-azul-efeito: #3c92fa;
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: "Inter";
+    --botao-azul-efeito: #3c92fa; /* add 18/06 */
 }
 
-body {
-    background-color: var(--cor-de-fundo)
+body{
+    background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-    font-family: var (--font-principal));
-    font-size: 16px;
-    font-weight: 400;
+    font-family: var(--fonte-principal); 
+    font-size: 16px; 
+    font-weight: 400; 
 }
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 .principal {
-    background-image: url("img/Backagroud.png");
+    background-image: url("img/Background.png"); 
     background-repeat: no-repeat;
     background-size: contain;
-    align-items: center;
-    text-align: center;
+    align-items: center; /* add 18/06 */
+    text-align: center; /* add 18/06 */
 }
 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50% ;
-
+    grid-template-columns: 50% 50%;
 }
 
 .container__botao {
@@ -42,29 +42,30 @@ body {
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* add 18/06*/
 }
-.botal_segundario { 
+
+.botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
 }
 
 .container__aviso {
     font-size: 12px;
-    color: var(--cinza-secundario)
+    color: var(--cinza-secundario);
 }
 
-.conteinet_titulo {
+.container__titulo {
     font-size: 28px;
-    font-weight: 700px;
+    font-weight: 700;
 }
-
-.container_imagem {
+/* add 19/06*/
+.container__imagem {
     margin: 1em 0 2em 0;
 }
 
-.container__caia {
-    margin: 0  6em;
+.container__caixa {
+    margin: 0 6em;
 }
 
 .secundario__imagem {
@@ -76,10 +77,10 @@ body {
     margin: 0 10em;
 }
 
-.descricao__texto {
+.descricao__titulo {
     font-weight: 700;
-    font-size: 40px;
-    color: var(--cinza-secundario);
+    font-size: 48px;
+    color: var(--branco-principal);
     margin-bottom: 0.1em;
 }
 
@@ -87,7 +88,7 @@ body {
     color: var(--cinza-secundario);
 }
 
-.secundario-botao {
+.secundario__botao {
     display: inline-block;
     margin-top: 1em;
 }
@@ -107,12 +108,12 @@ body {
     text-align: center;
 }
 
-.dispositivos__texto {
-    font-size: 32px;
+.dispositivos__titulo {
+    font-size: 48px;
     color: var(--branco-principal);
 }
 
-.redape {
+.rodape {
     text-align: center;
     margin: 5em 3em;
 }
@@ -122,7 +123,7 @@ body {
     color: var(--branco-principal);
 }
 
-.redape__lista {
+.rodape__lista {
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -134,22 +135,22 @@ body {
     color: var(--branco-principal);
     margin-left: 1em;
 }
-
-.rodape__descricao {
+/*add 01/07*/
+.rodape__texto {
     margin: 1em 0;
-    coor: var(--cinza-secundario);
+    color: var(--cinza-secundario);
     font-size: 14px;
 }
 
-.lista__link a : over {
+.lista__link a:hover {
     color: var(--botao-azul);
 }
 
-.lista__link a active {
-    color: purple
+.lista__link a:active {
+    color: purple;
 }
 
-.container__botao: hover {
+.container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
 }
